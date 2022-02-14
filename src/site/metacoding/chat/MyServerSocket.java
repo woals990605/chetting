@@ -25,7 +25,8 @@ public class MyServerSocket {
             System.out.println("클라이언트 연결됨");
         } catch (Exception e) {
             System.out.println("통신 오류 발생 : " + e.getMessage());
-            // e.printStackTrace();
+            e.printStackTrace();
+
         }
     }
 
