@@ -34,6 +34,10 @@ public class MyClientSocket {
                         String inputData = reader.readLine();
                         System.out.println("받은 메시지 : " + inputData);
                         System.out.println("===============");
+                        if (inputData.equals("")) {
+                            System.out.println("대화가 종료되었습니다.");
+                            break;
+                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
